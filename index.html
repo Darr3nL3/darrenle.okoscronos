@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Creating Web Applications">
+    <meta name="keywords" content="HTML CSS Javascrip">
+    <meta name="author" content="Darren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTWATCH ONLINE STORE</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/responsive.css" rel="stylesheet">
+<!--fav-icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+<!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--NAVIGATION MENU & LOGO-->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="logo-image"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a class="active-page" id="home_link" href="index.html">HOME</a></li>
+                    <li><a id="about_link" href="about.html">ABOUT</a></li>
+                    <li><a id="products_link" href="product.html">PRODUCTS</a></li>
+                    <li><a id="contact_link" href="enquire.html">CONTACT</a></li>
+                    <li><a id="enhancements_link" href="enhancements.html">ENHANCEMENTS</a></li>
+                </ul>
+            </nav>
+            <img class="cart-icon" src="images/cart.png" alt="cart-picture">
+            <!--MENU FUNCTION-->
+            <img class="menu-icon" src="images/menu.png" alt="menu icon">
+        </div>
+        <div class="row">     <!--WHERE FLEXIBLE CONTENT STARTS-->
+            <div class="col-2">
+                <h1>Time is on your side.<br>So is the future.</h1>
+                    <p>There's no time like the present. That's what they used to say.<br> For us, there's no time like the future.</p>
+                    <a href="product.html" class="btn">EXPLORE NOW &#x2192;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/hero.png" alt="hero product picture">
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEATURES-->
+<div class="features">
+    <h2>WHAT MAKES US DIFFERENT</h2>
+    <div class="small-container"> <!--NON FLEXIBLE CONTAINER-->
+        <div class="row">
+            <div class="col-4">
+                <img src="images/feature1.png" alt="first-feature">
+            </div>
+            <div class="col-4">
+                <img src="images/feature2.png" alt="second-feature">
+            </div>
+            <div class="col-4">
+                <img src="images/feature3.png" alt="third-feature">
+            </div>
+            <div class="col-4">
+                <img src="images/feature4.png" alt="third-feature">
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEATURED PRODUCTS-->
+<div class="featured-products">
+    <div class="small-container">
+        <h2 class="title">Featured Watchlist</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="product.html"><img src="images/featured_product1.png" alt="featured_product1"></a>
+            <h4>TODO Blutooth</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>     
+                </div>
+                <p>$499.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html"><img src="images/featured_product2.png" alt="featured_product2"></a>
+            <h4>TODO Fitness</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>    
+                </div>
+                <p>$499.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html"><img src="images/featured_product3.png" alt="featured_product3"></a>
+                <h4>RYZE Trek</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-full"></i>    
+                    </div>
+                    <p>$399.99</p>
+                </div>
+                <div class="col-4">
+                    <a href="product.html"><img src="images/featured_product4.png" alt="featured_product4"></a>
+                    <h4>Amazfit ACTIVEk</h4>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-full"></i>    
+                        </div>
+                        <p>$299.99</p>
+                    </div>
+</div>
+</div>
+</div>
+<!--PROMOTIONS PRODUCTS-->
+<div class="exclusive-products">
+    <div class="small-container">
+    <h2>EXCLUSIVE DEALS</h2>
+    <div class="row">
+        <div class="col-2">
+            <img src="images/exclusive_product.png" class="exclusive-img" alt="exclusive_product1">
+        </div>
+        <div class="col-2">
+            <p>Only available at AKOS | CRONOS</p>
+            <h1>GARD PRO HEALTH 2+</h1>
+            <small>The most advanced smartwatch for your health just got a whole lot better. <br>Stylish design.
+                Large display with ultra resolution and abundant of features.
+            </small>
+            <a href="product.html" class="btn">CLAIM DEAL &#x2192;</a>
+        </div>
+    </div>
+    </div>
+    </div>
+<!--TESTIMONIALS-->
+<div class="testimonials">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>This smartwatch has been a game-changer for my productivity. As someone who is constantly on the go, I needed a device that could keep up with my busy schedule.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>    
+                </div>
+                <img src="images/testimonial1.png" alt="testimonial_person_1">
+                <h3>Michelle Piper</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I have never been a big fan of smartwatches until I tried this one. The sleek design caught my eye, but it was the functionality that really won me over. It tracks my workouts, monitors my heart rate, and even reminds me to take a break when I’ve been sitting too long.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>    
+                </div>
+                <img src="images/testimonial2.png" alt="testimonial_person_2">
+                <h3>Michael Schumacher</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left"></i>
+                <p>I bought this smartwatch primarily for its health monitoring capabilities, and it hasn’t disappointed. The sleep tracking feature has provided valuable insights into my sleep patterns, and the heart rate monitor helps me keep tabs on my health.</p>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>   
+                </div>
+                <img src="images/testimonial3.png" alt="testimonial_person_3">
+                <h3>Anna Marie</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FOOTER--->
+<footer>
+    <div class="container">
+        <div class="social-heading">
+            <h2>FOLLOW US</h2>
+        </div>
+        <div class="row">
+                    <div id="social-list">
+                        <a href="https://wwww.facebook.com" target="_blank"><img src="images/social_logos/facebook_logo.svg" alt="facebook_logo"></a>
+                        <a href="https://wwww.instagram.com" target="_blank"><img src="images/social_logos/instagram_logo.svg" alt="instagram_logo"></a>
+                        <a href="https://wwww/pinterest.com" target="_blank"><img src="images/social_logos/pinterest_logo.svg" alt="pinterest_logo"></a>
+                        <a href="https://wwww.twitter.com" target="_blank"><img src="images/social_logos/twitter_logo.svg" alt="twitter_logo"></a>
+                        <a href="https://www.youtube.com" target="_blank"><img src="images/social_logos/youtube_logo.svg" alt="youtube_logo"></a>
+                    </div>
+        </div>
+        <hr>
+        <br>
+        <p class="copyright">Copyright 2024 - Darren Le - s105630596</p>
+    </div>
+</footer>
+</body>
+</html>

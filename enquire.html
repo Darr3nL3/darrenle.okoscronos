@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Creating Web Applications">
+    <meta name="keywords" content="HTML CSS Javascrip">
+    <meta name="author" content="Darren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link href="styles/responsive.css" rel="stylesheet"/>
+<!--fav-icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+<!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--NAVIGATION MENU & LOGO-->
+<div class="header">
+
+<div class="container">
+
+<div class="navbar">
+    <div class="logo">
+        <a href="index.html"><img src="images/logo.svg" alt="logo-image"></a>
+    </div>
+    <nav>
+    <ul id="menuitems">
+        <li><a id="home_link" href="index.html">HOME</a></li>
+        <li><a id="about_link" href="about.html">ABOUT</a></li>
+        <li><a id="products_link" href="product.html">PRODUCTS</a></li>
+        <li><a class="active-page" id="contact_link" href="enquire.html">CONTACT</a></li>
+        <li><a id="enhancements_link" href="enhancements.html">ENHANCEMENTS</a></li>
+    </ul>
+    </nav>
+    <img class="cart-icon" src="images/cart.png" alt="cart-picture">
+    <!--MENU FUNCTION-->
+    <img  class="menu-icon" src="images/menu.png" alt="menu icon">
+</div>
+</div>
+</div>
+<!--CONTACT US FORM-->
+<div class="contact-us-form">
+    <h1>TALK TO US</h1>
+<!--FORM STARTING--->
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
+    <p>Our office is open from 9:00am - 4:00pm | Mon - Sun</p>
+    <p>You can visit our office at 300 Sydney Road, Sydney, NSW 2000</p>
+    <p>You can also fill out this form below or email us at</p><p><a href="mailto:okoscronos@gmail.com">okoscronos@gmail.com</a></p>
+    <p>We will get back to within 2 business days. Thank you for your patience.</p>
+    <fieldset>
+    <h2>YOUR DETAILS</h2>
+        <input type="text" name= "customer_first_name" id="customer_first_name" maxlength="25" pattern="[a-zA-Z]{2,25}" placeholder="First name" required />
+        <input type="text" name="customer_last_name" id="customer_last_name" maxlength="25" pattern="[a-zA-Z]{2,25}" placeholder="Last name" required/>
+        <input type="text" name="customer_email" id="customer_email" maxlength="50" pattern=“^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$” placeholder="Email" required/>
+        <input type="text" name="customer_phone" id="customer_phone" maxlength="10" pattern="[0-9]{8-10}" placeholder="Contact number" required/>
+    </fieldset>
+    <br>
+    <fieldset>
+    <h2>HOW WOULD YOU LIKE TO BE CONTACTED?</h2>
+            <input type="radio" name="customer_preferred_contact" id="preferred_contact1" value="email" required checked/><label>EMAIL</label>
+            <input type="radio" name="customer_preferred_contact" id="preferred_contact2" value="post" required/><label>POST</label>
+            <input type="radio" name="customer_preferred_contact" id="preferred_contact3" value="phone" required/><label>PHONE</label>
+            <input type="radio" name="customer_preferred_contact" id="preferred_contact4" value="phone" required/><label>SOCIAL</label>
+            <br>
+    </fieldset>
+    <br>
+    <fieldset>
+    <h2>ADDRESS</h2>
+    <input type="text" name= "customer_street_address" id="customer_street_address" maxlength="40" pattern="[a-zA-Z0-9]{10, 40}" placeholder="Street address" required/>
+    <input type="text" name= "customer_suburb" id="customer_suburb" maxlength="20" pattern="[a-zA-Z0-9]+${2, 20}" placeholder="Suburb | Town" required/>
+            <select name="customer_state" id="customer_state" required>
+                <option value="" selected disabled>Select a state</option>
+                <option value="Victoria">VIC</option>
+                <option value="New South Wales">NSW</option>
+                <option value="Queensland">QLD</option>
+                <option value="Northern Territory">NT</option>
+                <option value="Western Australia">WA</option>
+                <option value="South Australia">SA</option>
+                <option value="Tasmania">TAS</option>
+                <option value="Australian Capital Territory">ACT</option>
+            </select>
+    <input type="text" name= "customer_postcode" id="customer_postcode" maxlength="4" pattern="[0-9]{4}" placeholder="Postcode" required/>
+    </fieldset>
+        <br>
+    <fieldset>
+    <h2>THE MESSAGE</h2>
+            <select name="watch_brand" id="watch_brand" required>
+                <option value="" selected disabled>The watch brand you're enquiring</option>
+                <option value="TickWatch">TickWatch</option>
+                <option value="AppleWatch">AppleWatch</option>
+                <option value="Fitbit">Fitbit</option>
+                <option value="ProWatch">ProWatch</option>
+            </select>
+    </fieldset>
+    <br>
+    <fieldset>
+    <div id="customer_features">
+        <div class="checkboxes">
+            <h3>Which feature(s) are you enquiring for?</h3>
+            <span>
+              <input type="checkbox" name="Mow" value="Mow"> <label>Battery</label>
+              <input type="checkbox" name="Weedeat" value="Weedeat"> <label>Software</label>
+              <input type="checkbox" name="Edge" value="Edge"> <label>Hardware</label>
+              <input type="checkbox" name="Other" value="Other"> <label>Cosmetic</label>
+            </span>
+        </div>
+    </div>
+        <br>
+    </fieldset>
+    <fieldset>
+        <textarea id="description" name="description" rows="30" cols="100" placeholder="Type your message here..."></textarea>
+    </fieldset>
+        <p>
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset Form"/>
+        </p>
+<!--FORM ENDING--->
+    </form>
+</div>
+<!--FOOTER--->
+<footer>
+    <div class="container">
+        <div class="social-heading">
+            <h2>FOLLOW US</h2>
+        </div>
+        <div class="row">
+            <div id="social-list">
+                <a href="https://wwww.facebook.com" target="_blank"><img src="images/social_logos/facebook_logo.svg" alt="facebook_logo"></a>
+                <a href="https://wwww.instagram.com" target="_blank"><img src="images/social_logos/instagram_logo.svg" alt="instagram_logo"></a>
+                <a href="https://wwww/pinterest.com" target="_blank"><img src="images/social_logos/pinterest_logo.svg" alt="pinterest_logo"></a>
+                <a href="https://wwww.twitter.com" target="_blank"><img src="images/social_logos/twitter_logo.svg" alt="twitter_logo"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/social_logos/youtube_logo.svg" alt="youtube_logo"></a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <p class="copyright">Copyright 2024 - Darren Le - s105630596</p>
+    </div>
+</footer>
+</body>
+</html>

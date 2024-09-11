@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Creating Web Applications">
+    <meta name="keywords" content="HTML CSS Javascrip">
+    <meta name="author" content="Darren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT DETAILS</title>
+    <link href="styles/style.css" rel="stylesheet"/>
+    <link href="styles/responsive.css" rel="stylesheet"/>
+<!--fav-icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png">
+<!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--NAVIGATION MENU & LOGO-->
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt="logo-image"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a id="home_link" href="index.html">HOME</a></li>
+                    <li><a id="about_link" href="about.html">ABOUT</a></li>
+                    <li><a class="active-page" id="products_link" href="product.html">PRODUCTS</a></li>
+                    <li><a id="contact_link" href="enquire.html">CONTACT</a></li>
+                    <li><a id="enhancements_link" href="enhancements.html">ENHANCEMENTS</a></li>
+                </ul>
+            </nav>
+            <img class="cart-icon" src="images/cart.png" alt="cart-picture">
+            <!--MENU FUNCTION-->
+            <img class="menu-icon" src="images/menu.png" alt="menu icon">
+        </div>
+    </div>
+</div>
+<!--NAVIGATION MENU & LOGO END-->
+<!--SINGLE PRODUCT DETAILS-->
+<div class="single-product">
+    <div class="single-product-container">
+        <div class="new-row">
+            <div class="col-2">
+                <!--Image Slider Start-->
+                <div class="slider">
+                    <div class="slides">
+                            <!--Radio Buttons START-->
+                            <input type="radio" name="radio_btn" id="button1">
+                            <input type="radio" name="radio_btn" id="button2">
+                            <input type="radio" name="radio_btn" id="button3">
+                            <input type="radio" name="radio_btn" id="button4">
+                            <!--Radio Buttons END-->
+                            <!--Image Slides START-->
+                            <div class="slide first">
+                                <img src="images/product_detail1.png" alt="product_detail1">
+                            </div>
+                            <div class="slide">
+                                <img src="images/product_detail2.png" alt="product_detail2">
+                            </div>
+                            <div class="slide">
+                                <img src="images/product_detail3.png" alt="product_detail3">
+                            </div>
+                            <div class="slide">
+                                <img src="images/product_detail4.png" alt="product_detail4">
+                            </div>
+                            <!--Image Slides END-->
+                    </div>
+                </div>
+                <!--Image Slider END-->
+                <!--Manual Navigation START-->
+                <div class="navigation-manual">
+                    <label for="button1" class="manual-btn"></label>
+                    <label for="button2" class="manual-btn"></label>
+                    <label for="button3" class="manual-btn"></label>
+                    <label for="button4" class="manual-btn"></label>
+                </div>
+                <!--Manual Navigation END-->
+            </div>
+<!--SINGLE PRODUCT DETAILS END-->
+            <aside class="col-2">
+                <br>
+                <br>
+                <br>
+                <p>Home / Watch</p>
+                <h1>TickWatch Series 3</h1>
+                <h4>$399.99</h4>
+                <select>
+                    <option>Select Colors</option>
+                    <option>RED</option>
+                    <option>PINK</option>
+                    <option>BLACK</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn2">Add to Cart</a>
+                <br>
+                <br>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>The Tickwatch Smartwatch is a cutting-edge wearable designed to keep you connected and on track, no matter where life takes you. The features include:</p>
+                    <ol>
+                        <li>Battery can last up to 48 hours.</li>
+                        <li>Durable material that can withstand 10m drop or 5m underwater.</li>
+                        <li>Incorporated GPS.</li>
+                    </ol>
+            </aside>
+        </div>
+    </div>
+</div>
+<!--SCRIPT FOR CLICKING ON SMALL IMAGES END-->
+<!--OTHER PRODUCTS DETAILS-->
+<div class="featured-products">
+    <div class="small-container">
+        <!--Title-->
+        <div class="row">
+            <div class="title-row">
+                <h2>Related products</h2>
+        </div>
+        <!--Title-->
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="product.html"><img src="images/collection1.png" alt="other_product_1"></a>
+                <h4>Smartwatch Brand</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>     
+                </div>
+                <p>$499.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html"><img src="images/collection2.png" alt="other_product_2"></a>
+                <h4>Smartwatch Brand</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>    
+                </div>
+                <p>$499.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html"><img src="images/collection3.png" alt="other_product_3"></a>
+                <h4>Smartwatch Brand</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>        
+                </div>
+                <p>$499.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product.html"><img src="images/collection4.png" alt="other_product_4"></a>
+                <h4>Smartwatch Brand</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>       
+                </div>
+                <p>$499.99</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--BRANDS INFINITE LOOP--->
+
+<!--FOOTER--->
+<footer>
+    <div class="container">
+        <div class="social-heading">
+            <h2>FOLLOW US</h2>
+        </div>
+        <div class="row">
+            <div id="social-list">
+                <a href="https://wwww.facebook.com" target="_blank"><img src="images/social_logos/facebook_logo.svg" alt="facebook_logo"></a>
+                <a href="https://wwww.instagram.com" target="_blank"><img src="images/social_logos/instagram_logo.svg" alt="instagram_logo"></a>
+                <a href="https://wwww/pinterest.com" target="_blank"><img src="images/social_logos/pinterest_logo.svg" alt="pinterest_logo"></a>
+                <a href="https://wwww.twitter.com" target="_blank"><img src="images/social_logos/twitter_logo.svg" alt="twitter_logo"></a>
+                <a href="https://www.youtube.com" target="_blank"><img src="images/social_logos/youtube_logo.svg" alt="youtube_logo"></a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <p class="copyright">Copyright 2024 - Darren Le - s105630596</p>
+    </div>
+</footer>
+</body>
+</html>
